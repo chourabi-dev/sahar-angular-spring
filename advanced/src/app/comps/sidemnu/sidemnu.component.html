@@ -1,0 +1,9 @@
+<div class="card">
+    <div class="card-body">
+        <ul class="list-group">
+            <li class="list-group-item" routerLinkActive="active " *ngFor="let m of menu">
+                <a class="text-warning" [routerLink]="m.url">{{m.title}}</a>
+            </li> 
+          </ul>
+    </div>
+</div>

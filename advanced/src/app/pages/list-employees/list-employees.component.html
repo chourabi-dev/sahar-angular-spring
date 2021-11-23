@@ -1,0 +1,26 @@
+<div class="card">
+    <div class="card-body">
+        <h3>List of employees</h3>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Fullname</th>
+                    <th>Email</th>
+                    <th>Address</th>
+                    <th>Actions</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let e of employees">
+                    <td>{{e.id}}</td>
+                    <td>{{e.fullname}}</td>
+                    <td>{{e.email}}</td>
+                    <td>{{e.address}}</td>
+                    <th><a [routerLink]=" '/home/employee/'+e.id ">details</a></th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

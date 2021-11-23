@@ -1,0 +1,85 @@
+<!--
+  <h1> {{training}} </h1>
+
+<h3> {{ year }} </h3>
+
+<p>
+  2021
+</p>
+
+<p>
+  {{employees}}
+</p>
+
+<h3>Employees : </h3>
+<hr>
+<ul>
+  <li  *ngFor="let e of employees" >
+    <h3>{{e.fullname}}</h3>
+    <p>
+      <small> {{ e.email }} / {{ e.address }} </small>
+    </p>
+  </li>
+</ul>
+
+<p *ngIf="canDisplayBlock">
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, voluptatum doloribus eligendi nobis sunt dolore modi alias ratione ullam labore deleniti, vero iste, asperiores quia. Ratione modi nihil nobis rem?
+  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente atque velit, suscipit rem tenetur doloremque cum illo earum aliquam est magni ut porro laboriosam, mollitia aspernatur fuga quis eligendi laudantium.
+</p>
+
+
+-->
+
+
+
+
+<!--<img width="250px" [src]="imgURL" alt="">-->
+
+<!--
+<h3>Employees : {{employees.length  }} </h3>
+<hr>
+<ul>
+  <li  *ngFor="let e of employees" >
+    <h3 [style.color]=" e.year < 2018 ? 'red' : 'green' ">{{e.fullname}}</h3> 
+    <h3 [ngClass]=" e.year < 2018 ? 'old' : 'new' " class="f-50"  >{{e.fullname}}</h3> 
+
+    
+    <p>
+      <small> {{ e.email }} / {{ e.address }} </small>
+    </p>
+  </li>
+</ul>-->
+
+
+
+
+<p>
+  {{ today | date:'medium' }}
+</p>
+
+<p>
+  {{ 'hello world' | uppercase }}
+</p>
+
+<p>
+  {{ 'HELLO' | lowercase }}
+</p>
+
+<p>
+  {{ 'this is a title' | titlecase }}
+</p>
+
+
+<p>
+  {{ 1800000000000 | number }}
+</p>
+
+<p>
+  Amount : {{ 2500 | currency:'TND' }}
+</p>
+
+
+
+<p>
+  {{ 'tchourabi@gmail.com' | email }}
+</p>
