@@ -13,7 +13,9 @@ import { HomeComponent } from './pages/home/home.component';
 import { AboutComponent } from './pages/about/about.component';
 import { EmployeeDetailsComponent } from './pages/employee-details/employee-details.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
-
+import { NewTypesComponent } from './new-types/new-types.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FakeDataComponent } from './fake-data/fake-data.component';
 
 @NgModule({
   declarations: [
@@ -26,13 +28,16 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
     HomeComponent,
     AboutComponent,
     EmployeeDetailsComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    NewTypesComponent,
+    FakeDataComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

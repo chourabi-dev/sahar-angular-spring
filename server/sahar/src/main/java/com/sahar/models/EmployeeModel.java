@@ -3,8 +3,12 @@ package com.sahar.models;
 public class EmployeeModel {
 
 	private String fullname;
-	private String email;
-	private String cin;
+	private String email; 
+	private long department; 
+	
+	
+	
+	
 	public String getFullname() {
 		return fullname;
 	}
@@ -17,13 +21,14 @@ public class EmployeeModel {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	public String getCin() {
-		return cin;
+	public long getDepartment() {
+		return department;
 	}
-	public void setCin(String cin) {
-		this.cin = cin;
+	public void setDepartment(long department) {
+		this.department = department;
 	}
-	
+
+
 	
 	
 	

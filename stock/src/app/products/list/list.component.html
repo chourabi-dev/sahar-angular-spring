@@ -1,0 +1,47 @@
+
+<div class="card">
+    <div class="card-body">
+        <div class="d-flex justify-content-between">
+            <h3>Products</h3>
+
+            <a routerLink="/products/add" class="btn btn-primary">Add</a>
+        </div>
+    </div>
+</div>
+
+
+<div class="card">
+    <div class="card-body">
+        <table class="table">
+            <thead>
+               
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Actions</th>
+                        
+                        
+                    </tr>
+                
+                
+            </thead>
+            <tbody>
+                <tr *ngFor="let d of products; let i = index;">
+                    <td>{{i+1}}</td>
+                    <td>{{d.name}}</td>
+                    <td>{{d.quantity | number}}</td>
+                    <td>{{d.price | currency}}</td>
+                    <td>
+                        <a [routerLink]="'/products/edit/'+d.id" class="btn btn-primary btn-sm"> edit</a>
+                        <button class="btn btn-danger btn-sm" (click)="deleteProduct(d.id)" >delete</button>
+                    </td>
+                    
+                    
+                    
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

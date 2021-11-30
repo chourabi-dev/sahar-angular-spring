@@ -1,0 +1,42 @@
+
+<div class="card">
+    <div class="card-body">
+        <div class="d-flex justify-content-between">
+            <h3>Clients</h3>
+
+            
+    </div>
+</div>
+
+
+<div class="card">
+    <div class="card-body">
+        <table class="table">
+            <thead>
+               
+                    <tr>
+                        <th>#</th>
+                        <th>Fullname</th>
+                        <th>Email</th>
+                        <th>Code</th>
+                        <th>Actions</th>
+                        
+                    </tr>
+                
+                
+            </thead>
+            <tbody>
+                <tr *ngFor="let d of clients; let i = index;">
+                    <td>{{i+1}}</td>
+                    <td>{{d.fullname}}</td>
+                    <td>{{d.email}}</td>
+                    <td>{{d.code}}</td>
+                    <td>
+                        <a [routerLink]="'/clients/purshase/'+d.id" class="btn btn-success">Add order</a>
+                    </td>
+                    
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

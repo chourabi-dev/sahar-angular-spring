@@ -1,0 +1,33 @@
+
+<div class="card">
+    <div class="card-body">
+        <div class="d-flex justify-content-between">
+            <h3>Departments</h3>
+
+            <a routerLink="/department/add" class="btn btn-primary">Add</a>
+        </div>
+    </div>
+</div>
+
+
+<div class="card">
+    <div class="card-body">
+        <table class="table">
+            <thead>
+               
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                    </tr>
+                
+                
+            </thead>
+            <tbody>
+                <tr *ngFor="let d of departments; let i = index;">
+                    <td>{{i+1}}</td>
+                    <td>{{d.name}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

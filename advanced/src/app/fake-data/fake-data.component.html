@@ -1,0 +1,7 @@
+<h1 *ngIf="isLoading" >Loading...</h1>
+<ul *ngIf="! isLoading"  >
+    <li *ngFor="let data of arrayOFData">
+        <h3>{{data.title}}</h3>
+        <p>{{data.body}}</p>
+    </li>
+</ul>
